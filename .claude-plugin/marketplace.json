@@ -1,0 +1,17 @@
+{
+  "name": "my-claude-plugins",
+  "owner": {
+    "name": "krrisharora"
+  },
+  "metadata": {
+    "description": "My Claude Code plugins."
+  },
+  "plugins": [
+    {
+      "name": "starter-plugin",
+      "version": "0.1.0",
+      "description": "A starter plugin with one example skill.",
+      "source": "./plugins/starter-plugin"
+    }
+  ]
+}
