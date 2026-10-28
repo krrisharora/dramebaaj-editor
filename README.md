@@ -1,4 +1,4 @@
-# my-claude-plugins
+# Dramebaaj Editor
 
 A Claude Code plugin marketplace.
 
@@ -7,8 +7,8 @@ A Claude Code plugin marketplace.
 In Claude Code, run:
 
 ```
-/plugin marketplace add krrisharora/my-claude-plugins
-/plugin install starter-plugin@my-claude-plugins
+/plugin marketplace add krrisharora/dramebaaj-editor
+/plugin install dramebaaj-editor@dramebaaj-editor
 ```
 
 Or add this to `~/.claude/settings.json`:
@@ -16,12 +16,12 @@ Or add this to `~/.claude/settings.json`:
 ```json
 {
   "extraKnownMarketplaces": {
-    "my-claude-plugins": {
-      "source": { "source": "github", "repo": "krrisharora/my-claude-plugins" }
+    "dramebaaj-editor": {
+      "source": { "source": "github", "repo": "krrisharora/dramebaaj-editor" }
     }
   },
   "enabledPlugins": {
-    "starter-plugin@my-claude-plugins": true
+    "dramebaaj-editor@dramebaaj-editor": true
   }
 }
 ```
@@ -30,13 +30,13 @@ Or add this to `~/.claude/settings.json`:
 
 ```
 .claude-plugin/marketplace.json        lists the plugins in this repo
-plugins/starter-plugin/
+plugins/dramebaaj-editor/
   .claude-plugin/plugin.json           plugin name, version, author
   skills/hello/SKILL.md                an example skill
 ```
 
 ## Adding a skill
 
-1. Make a folder `plugins/starter-plugin/skills/<skill-name>/`.
+1. Make a folder `plugins/dramebaaj-editor/skills/<skill-name>/`.
 2. Put a `SKILL.md` in it (copy `hello` as a template).
 3. Bump `version` in both `plugin.json` and `marketplace.json`, then commit and push.
